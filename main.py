@@ -1,6 +1,7 @@
 from art import logo
 import random
 
+
 def play():
     print(logo)
     computer_choice = random.randint(1, 100)
@@ -40,7 +41,9 @@ def wanna_play():
         play()
     elif user_play == "n":
         print("OK, Goodbye!")
+        quit()
     else:
         print("You entered an invalid response, Good bye")
+        quit()
 
 wanna_play()
